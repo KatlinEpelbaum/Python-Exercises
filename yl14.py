@@ -1,7 +1,7 @@
-file = input("Sisestage failinimi kujul .ext: ")
-ext = file.split(".")
+file = input("Sisesta faili nimi: ")
+x = file.split(".")
 if ".ext" in file:
-    print(ext[1])
+    print(x(1))
 
 else:
-    print("Faili nimi pole kujul .ext")
+    print("Faili nimes pole kuju '.ext'")
