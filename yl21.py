@@ -1,7 +1,6 @@
 import random
 
-number = range(101)
-x = random.choice(number)
+x = random.randint(1, 100)
 
 user = int(input("Palun sisestage number: "))
 
@@ -14,6 +13,7 @@ while True:
         user = int(input("Palun sisestage number: "))
     else:
         break
+print("Õige!")
 
 
 
