@@ -1,3 +1,3 @@
-for x in range(6):
-  if x == 6: break
+for x in range(5, 0, -1):
+  if x == 0: break
   print(x)
