@@ -1,5 +1,5 @@
 import praw
-import yl27.credentials as credentials
+import credentials as credentials
 import matplotlib.pyplot as plt
 
 reddit = praw.Reddit(
@@ -45,27 +45,6 @@ for word in words:
         wordCount[word] = 1
 
 sortedList = sorted(wordCount, key = wordCount.get, reverse = True)
-
-keyWords = []
-keyCount = []
-amount = 0
-
-for entry in sortedList:
-    keyWords.append(entry)
-    keyCount.append(wordCount[entry])
-    amount += 1
-    if (amount == 10):
-        break
-
-labels = keyWords
-sizes = keyCount
-
-plt.title('Top comments for: r/' + subredditname)
-plt.pie(sizes, labels=labels, autopct='%1.1f%%',
-        shadow=True, startangle=90)
-plt.axis('equal')
-
-plt.show()
 
 keyWords = []
 keyCount = []
