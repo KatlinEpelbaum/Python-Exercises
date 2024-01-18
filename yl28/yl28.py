@@ -16,3 +16,4 @@ for div_item in tqdm(movieList):
     header = div.findChildren('h3',attrs={'class':'lister-item-header'})
     print('Movie: ' + str((header[0].findChildren('a'))[0].contents[0].encode('utf-8').decode('ascii', 'ignore')))
     i += 1
+    
