@@ -1,0 +1,25 @@
+Algoritm - samm sammuline juhend, reeglistik.
+Programmi lähtandmete lugemine - API-st, andmebaas, failidest, andurid, kasutaja.
+Muutuja - konteiner, neid on erinevaid (stringid, numbrid ehk andmetüüp). Neil on nimed. CONSTANTi ei saa muuta. 
+Nimetamine - Inglise keeles alati, seletavad ehk kirjeldavad, üldjuhul väiketähed, ühesõnalised, võib kasutada alatikriipsu või numbreid.
+Andmetüübid - Number, string, boolean, int, float.
+    String on ainult tekst(Tähed ja numbrid).
+    Number on ainult numbrid.
+    Boolean on true või false (või 1 ja 0 - false).
+    Inti ja str funktsioon on teisendada andmetüüpide vahel.
+
+Sisend ja väljand - Input ja Print
+
+
+Tingimuslause - If, elif, else. Loogika operaatorid: And, or, not(!). Taandrida if-i järgi.
+List:
+    kantsuludes, komadega eraldatud listi elemendid.
+    Väärtuseid saame väljandada indexite kaudu(algab nullist).
+    Listi lisamine on append kaudu.
+    Sort meetod, et sorteerida.
+
+Korduslause - For ja While. range() funktsioon
+    For(in) - Selle listi sees iga see element selle listi sees.
+    While - Loop lõppeb siis kui tingimus on false. Tõõtab kuni on tõene.
+    Range()Funktsioon - annab numbreid, default on 0. Start - algus number. Stop - lõpp number. Stop ei kuulu sinna hulka. Start kuulub.
+    Step - mitme võrra väheneb või suureneb.
