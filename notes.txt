@@ -6,7 +6,8 @@ Andmetüübid - Number, string, boolean, int, float.
     String on ainult tekst(Tähed ja numbrid).
     Number on ainult numbrid.
     Boolean on true või false (või 1 ja 0 - false).
-    Inti ja str funktsioon on teisendada andmetüüpide vahel.
+    str ja int funktsioon - str teeb stringiks ja int teeb
+    Float on komakohaga number
 
 Sisend ja väljand - Input ja Print
 
@@ -19,7 +20,7 @@ List:
     Sort meetod, et sorteerida.
 
 Korduslause - For ja While. range() funktsioon
-    For(in) - Selle listi sees iga see element selle listi sees.
+    For(in) - see teeb seda kindel number kordi jada põhjal
     While - Loop lõppeb siis kui tingimus on false. Tõõtab kuni on tõene.
     Range()Funktsioon - annab numbreid, default on 0. Start - algus number. Stop - lõpp number. Stop ei kuulu sinna hulka. Start kuulub.
     Step - mitme võrra väheneb või suureneb.
