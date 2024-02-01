@@ -24,3 +24,5 @@ Korduslause - For ja While. range() funktsioon
     While - Loop lõppeb siis kui tingimus on false. Tõõtab kuni on tõene.
     Range()Funktsioon - annab numbreid, default on 0. Start - algus number. Stop - lõpp number. Stop ei kuulu sinna hulka. Start kuulub.
     Step - mitme võrra väheneb või suureneb.
+
+{} - dictionary

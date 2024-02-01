@@ -1,15 +1,15 @@
 dictionary = {
-    "eesnimi": "Kätlin",
-    "perenimi": "Epelbaum",
-    "sünniaasta": 2006,
-    "elukoht": "Kuressaare",
-    "lemmik loom": "kass"
+    "name": "Kätlin",
+    "last_name": "Epelbaum",
+    "birth_year": 2006,
+    "location": "Kuressaare",
+    "favorite_animal": "kass"
 }
-m = dictionary.get("elukoht")
+m = dictionary.get("location")
 print(m)
-print(dictionary["elukoht"])
+print(dictionary["location"])
 
-dictionary["lemmik loom"] = "Kassid ja rotid"
+dictionary["favorite_animal"] = "Kassid ja rotid"
 
 print(dictionary.keys())
 
@@ -23,9 +23,9 @@ else:
 
 print(len(dictionary))
 
-dictionary["pikkus"] = 165
+dictionary["height"] = 164
 
-del dictionary["sünniaasta"]
+del dictionary["birth_year"]
 print(dictionary)
 
 

@@ -1,17 +1,29 @@
 import random
 
-choices = ["kivi", "paber", "käärid"]
-x = random.choice(choices)
-
 while True:
-    a = input("Sisesta kivi, paber või käärid(lõpetamiseks x): ")
+    user_action = input("Vali (Kivi, Paber, Käärid): ")
+    possible_actions = ["Kivi", "Paber", "Käärid"]
+    computer_action = random.choice(possible_actions)
+    print(f"\nSa valisid: {user_action}, arvuti valis {computer_action}.\n")
 
-    if a == "kivi" and x == "käärid" or a == "paber" and x == "kivi" or a == "käärid" and x == "paber":
-        print("Sinu võit!")
-    elif a == "kivi" and x == "paber" or a == "paber" and x == "käärid" or a == "käärid" and x == "kivi":
-        print("Sina kaotasid")
-    else:
-        print("Viik")
+    if user_action == computer_action:
+        print(f"Mõlemad mängijad valisid {user_action}. See on viik!")
+    elif user_action == "Kivi":
+        if computer_action == "Käärid":
+            print("Kivi tapab käärid! Sa võidad!")
+        else:
+            print("Paber tapab kivi! Sa kaotad.")
+    elif user_action == "Paber":
+        if computer_action == "Kivi":
+            print("Paber tapab kivi! Sa võidad!")
+        else:
+            print("Käärid tapab paberi! Sa kaotad.")
+    elif user_action == "Käärid":
+        if computer_action == "Paber":
+            print("Käärid tapab paberi! Sa võidad!")
+        else:
+            print("Kivi tapab käärid! Sa kaotad.")
 
-    if a == "x":
+    play_again = input("Tahad veel mängida? (JAH/EI): ")
+    if play_again.lower() != "jah":
         break
