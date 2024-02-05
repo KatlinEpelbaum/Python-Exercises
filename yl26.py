@@ -72,3 +72,4 @@ for key in revenue:
             total_profit += profit
 
     print(key, round(total_profit * 0.062))
+    
